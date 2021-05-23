@@ -1,0 +1,126 @@
+body {
+  width: 500px;
+  margin: 4% auto;
+  font-family: "Source Sans Pro", sans-serif;
+  letter-spacing: 5px;
+  font-size: 1.8rem;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  background: #ebecf0;
+}
+
+.calculator {
+  padding: 20px;
+  box-shadow: 6px 6px 12px 0px rgba(55, 84, 170, 0.15),
+    -7px -7px 15px 0px rgba(255, 255, 255, 1);
+  border-radius: 10px;
+}
+
+.input {
+  height: 60px;
+  padding: 15px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  text-align: right;
+  margin-right: 6px;
+  font-size: 2.5rem;
+  overflow-x: auto;
+  transition: all 0.2s ease-in-out;
+  border-radius: 10px;
+  border: 3px solid #f3f4f7;
+  box-shadow: 2px 2px 3px rgba(55, 84, 170, 0.15),
+    inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, 0.2) !important;
+  color: #6d7587;
+}
+.operators {
+  display: flex;
+  justify-content: space-between;
+}
+.operators div {
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+  padding: 10px;
+  margin: 20px 4px 10px 0;
+  cursor: pointer;
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) !important;
+  transition: box-shadow 0.25s ease !important;
+  background-color: #ebecf0;
+  color: #6d7587;
+  font-size: 28px;
+}
+.leftPanel {
+  display: inline-block;
+}
+.numbers {
+  display: flex;
+  justify-content: space-between;
+}
+.numbers div {
+  display: inline-block;
+  border-radius: 1px;
+  width: 70px;
+  text-align: center;
+  padding: 10px;
+  margin: 10px 18px 10px 0;
+  cursor: pointer;
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) !important;
+  transition: box-shadow 0.25s ease !important;
+  background-color: #ebecf0;
+  color: #6d7587;
+  font-size: 28px;
+}
+div.equal {
+  display: inline-block;
+  border-radius: 1px;
+  width: 100px;
+  text-align: center;
+  padding: 122px 10px;
+  margin: 10px 0;
+  vertical-align: top;
+  cursor: pointer;
+  color: #6d7587;
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+    inset 7px 7px 15px rgba(55, 84, 170, 0),
+    inset -7px -7px 20px rgba(255, 255, 255, 0),
+    0px 0px 4px rgba(255, 255, 255, 0) !important;
+  transition: box-shadow 0.25s ease !important;
+  background-color: #ebecf0;
+}
+/* 
+ {
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, 0.2) !important;
+  color: #363636;
+} */
+.operators div:active,
+.numbers div:active,
+div.equal:active {
+  box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+    -7px -7px 20px rgba(255, 255, 255, 1),
+    inset 0px 0px 4px rgba(255, 255, 255, 0),
+    inset 7px 7px 15px rgba(55, 84, 170, 0.15),
+    inset -7px -7px 20px rgba(255, 255, 255, 1),
+    0px 0px 4px rgba(255, 255, 255, 0.2) !important;
+  color: #363636;
+}
